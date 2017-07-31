@@ -1,0 +1,28 @@
+<div class="row border-strong padding-0">
+    <div class="col-md-4 col-sm-4 col-4 padding-0 square">
+        <div class="col-md-12 border-strong-bottom table-div">
+            <div class="cell-centered text-center">{{satelliteCounterCtrl.totalLeft}}</div>
+        </div>
+        <div class="row margin-0 bg-lightgray">
+            <div class="col-md-6 col-sm-6 col-6 btn-calc btn-sep-line" ng-click="satelliteCounterCtrl.onLeftLocalButton(false);">-</div>
+            <div class="col-md-6 col-sm-6 col-6 btn-calc" ng-click="satelliteCounterCtrl.onLeftLocalButton(true);">+</div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-4 border-strong-left">
+        <div class="v-centered margin-0 satellite-lbl text-center">
+            <div class="name">{{satelliteCounterCtrl.name}}</div>
+            <div class="label">{{ 'satelliteLbl' | translate }}</div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-4 border-strong-left padding-0 square">
+        <div class="col-md-12 border-strong-bottom table-div">
+            <div class="cell-centered text-center">{{satelliteCounterCtrl.totalRight}}</div>
+        </div>
+        <div class="row margin-0 bg-lightgray">
+            <div class="col-md-6 col-sm-6 col-6 btn-calc btn-sep-line" ng-click="satelliteCounterCtrl.onRightLocalButton(false);">-</div>
+            <div class="col-md-6 col-sm-6 col-6 btn-calc" ng-click="satelliteCounterCtrl.onRightLocalButton(true);">+</div>
+        </div>
+    </div>
+</div>

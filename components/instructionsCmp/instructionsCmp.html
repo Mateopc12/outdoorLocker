@@ -1,0 +1,10 @@
+<div class="instructions">
+    <div class="text-center">
+        <label>{{'instructionLbl' | translate}}</label>
+    </div>
+    <div ng-repeat="rule in instructionsCtrl.rules" class="padding-5">
+        <label>{{$index + 1}})</label>
+        <label>{{rule.nameCode | translate}}: </label>
+        <p class="margin-0">{{rule.descriptionCode | translate}}</p>
+    </div>
+</div>

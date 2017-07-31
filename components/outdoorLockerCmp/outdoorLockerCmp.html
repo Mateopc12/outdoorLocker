@@ -1,0 +1,29 @@
+<div class="imgOutdoor">
+    <img src="../../rsc/apex_logo.png">
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-12 col-12">
+        <conditions rules-status="outdoorLockerCtrl.rulesStatus" final-cabinet-selected="outdoorLockerCtrl.finalCabinetSelected"
+        />
+    </div>
+    <div class="col-lg-4 col-md-12 col-12 noselect">
+        <div class="padding-5" ng-repeat="satellite in outdoorLockerCtrl.jsonRules.satelliteUnitsType">
+            <satellite-counter name="satellite.satelliteName" on-button-right="outdoorLockerCtrl.buttonRight($event)" on-button-left="outdoorLockerCtrl.buttonLeft($event)"
+                cuantity-per-unit="satellite.cuantityPerUnit" is-reset="outdoorLockerCtrl.isReset">
+        </div>
+        <div class="padding-5 text-center title">
+            {{'totalLbl' | translate}}
+        </div>
+        <div class="padding-5">
+            <total-counter total-left="outdoorLockerCtrl.totalLeft" total-right="outdoorLockerCtrl.totalRight" />
+        </div>
+    </div>
+    <div class="col-lg-4 hidden-md-down">
+        <instructions />
+    </div>
+    <div class="text-center full-width">
+        <div class="hidden-lg-up final-condition-rules">
+            <final-condition rules-status="outdoorLockerCtrl.rulesStatus"></final-condition>
+        </div>
+    </div>
+</div>

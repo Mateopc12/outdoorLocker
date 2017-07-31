@@ -1,0 +1,30 @@
+<div class="conditions-container noselect">
+    <label class="hidden-md-down info">Redesigned <strong> AXCESS 6800 </strong> (Outdoor Locker) Configuration Check-Rev02</label>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" 
+        type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{conditionsCtrl.finalCabinetSelected.cabinetFullName}}
+            <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" ng-repeat="cabinet in conditionsCtrl.mainCabinets" href="#" ng-click="conditionsCtrl.changeFinalCabinet(cabinet);">
+                {{cabinet.cabinetFullName}}
+            </a>
+        </div>
+    </div>
+    <div class="conditions-rules row">
+        <div ng-repeat="condition in conditionsCtrl.rulesStatus" class="col-lg-12 col-md-4 col-sm-6 col-6 row condition">
+            <div class="col-md-6 col-sm-8 col-8 padding-0">
+                <label ng-if="condition.status">{{condition.errorCode | translate}}</label>
+                <label ng-if="!condition.status">{{condition.successCode | translate}}</label>
+            </div>
+            <div class="col-md-6 col-sm-4 col-4 text-center padding-0">
+                <i ng-if="!condition.status" class="fa fa-check-circle-o check-icon" aria-hidden="true"></i>
+                <i ng-if="condition.status" class="fa fa-times-circle check-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="final-condition-rules hidden-md-down">
+        <final-condition rules-status="conditionsCtrl.rulesStatus"></final-condition>
+    </div>
+</div>
