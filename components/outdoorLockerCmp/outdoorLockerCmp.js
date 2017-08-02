@@ -67,8 +67,8 @@ angular.module('outdoorLockerMdl')
 
         this.onTotalUnitsChange = (event) => {
             this.totalUnits = (event.isAdding) ? this.totalUnits + 1 : ((event.cuantity > 0) ? this.totalUnits - 1 : this.totalUnits);
-            this.rulesStatus[3].status = 8 <= this.totalUnits + 1;
-            this.rulesStatus[4].status = 4 <= this.totalUnits + 1;
+            this.rulesStatus[3].status = (8 < this.totalUnits + 1);
+            this.rulesStatus[4].status = (4 < this.totalUnits + 1);
         }
     }],
     templateUrl: "components/outdoorLockerCmp/outdoorLockerCmp.html"
