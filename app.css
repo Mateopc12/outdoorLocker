@@ -45,12 +45,20 @@
   margin: 0 !important;
 }
 
+.margin-5 {
+  margin: 5 !important;
+}
+
 .margin-15 {
   margin: 15px !important;
 }
 
 .margin-left-0 {
   margin-left: 0px !important;
+}
+
+.margin-left-10 {
+  margin-left: 10px !important;
 }
 
 .margin-auto {
@@ -189,7 +197,7 @@
 .main-cabinet-choose-btn {
   border-radius: 45px;
   background-color: gray;
-  width: 220px;
+  width: 250px;
   height: 35px;
   text-align: center;
   cursor: pointer;
@@ -248,7 +256,7 @@
 .final-condition-rules {
   background-color: #232222;
   border: 6px solid gray;
-  margin: 3% 5% 3% 5%;
+  margin: 20px;
 }
 
 .final-condition-div {
@@ -277,6 +285,16 @@
 .instructions {
   padding: 0px 15px;
   color: #626565;
+}
+
+.instructions .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #424545;
+}
+
+.instructions .content {
+  font-size: 15px;
 }
 
 .instructions label {
@@ -333,6 +351,11 @@
 
   .conditions-rules .condition {
     max-width: 47%;
+    margin: 5px 4px;
+  }
+
+  .final-condition-rules {
+    margin-top: 15px;
   }
 }
 
@@ -343,6 +366,7 @@
 
   .conditions-rules .condition {
     max-width: 31%;
+    margin: 5px 8px;
   }
 
   .dropdown {
@@ -367,10 +391,6 @@
 
   .dropdown button {
     font-size: 15px;
-  }
-
-  .conditions-rules .condition {
-    margin: 5px 5px;
   }
 }
 

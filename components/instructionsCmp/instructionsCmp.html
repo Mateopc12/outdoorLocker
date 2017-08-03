@@ -1,10 +1,16 @@
 <div class="instructions">
-    <div class="text-center">
+    <div class="title">
         <label>{{'instructionLbl' | translate}}</label>
     </div>
-    <div ng-repeat="rule in instructionsCtrl.rules" class="padding-5">
+    <div ng-repeat="rule in instructionsCtrl.rules" class="padding-5 content">
         <label>{{$index + 1}})</label>
         <label>{{rule.nameCode | translate}}: </label>
         <p class="margin-0">{{rule.descriptionCode | translate}}</p>
+        <div ng-if="rule.notesName" class="margin-5">
+            <label class="margin-0">{{rule.notesName | translate}}</label>
+            <ul class="margin-0">
+                <li class="margin-0 margin-left-10" ng-repeat="note in rule.notes">{{note.descriptionNoteCode | translate}}</li>
+            </ul>
+        </div>
     </div>
 </div>

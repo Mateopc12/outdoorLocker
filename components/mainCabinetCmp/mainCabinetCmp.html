@@ -12,7 +12,7 @@
                 <div ng-repeat="cabinet in mainCabinetCtrl.mainCabinettes" class="col-md-4 col-sm-12 col-12 opt" ng-click="mainCabinetCtrl.selectCurrentCabinet(cabinet);">
                     <div class="text-center margin-auto border-strong padding-15" ng-class="{'main-cabinet-lbl-selected border-strong-gray': mainCabinetCtrl.cabinetSelected.cabinetName===cabinet.cabinetName, 'main-cabinet-lbl': 'mainCabinetCtrl.cabinetSelected.cabinetName!==cabinet.cabinetName'}">
                         <div class="name">{{cabinet.cabinetName}}</div>
-                        <div class="label">{{ 'doorsMainLbl' | translate }}</div>
+                        <div class="label">Doors Main</div>
                     </div>
                 </div>
             </div>
