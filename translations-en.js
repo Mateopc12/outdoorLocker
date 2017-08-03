@@ -7,10 +7,8 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     "doorsMainLbl": "Doors Main",
     "totalLbl": "Total",
     "chooseCabinetLbl": "Choose Main Cabinet",
-    "successLbl": "Success!",
-    "failedLbl": "Failure!",
-    "successMessageLbl": "Your configuration has SUCCEEDED",
-    "failedMessageLbl": "Your configuration has FAILED",
+    "successMessageLbl": "The Configuration is Successful!",
+    "failedMessageLbl": "The Configuration is Unsuccessful!",
     "instructionLbl": "Instructions",
 
     /*Error messages*/

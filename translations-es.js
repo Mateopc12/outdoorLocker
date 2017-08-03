@@ -4,19 +4,16 @@ var JSON_TRANSLATIONS_ES_OBJECT =
     "mainLbl": "Principal",
     "rightLbl": "Derecha",
     "leftLbl": "Izquierda",
-    "doorsMainLbl": "Puertas Principales",
     "totalLbl": "Total",
     "chooseCabinetLbl": "Seleccionar Main Cabinet",
-    "successLbl": "Éxito!",
-    "failedLbl": "Fracaso!",
-    "successMessageLbl": "Su configuración ha sido EXITOSA",
-    "failedMessageLbl": "Su configuración ha FALLADO",
+    "successMessageLbl": "La Configuración es Exitosa!",
+    "failedMessageLbl": "La Configuración ha Fallado!",
     "instructionLbl": "Instrucciones",
 
     /*Error messages*/
     "MSG-E01": "Violación Principal!",
-    "MSG-E02": "Violación de Unidades de Izquierda!",
-    "MSG-E03": "Violación de unidades de Derecha!",
+    "MSG-E02": "Violación de Unidades de la Izquierda!",
+    "MSG-E03": "Violación de unidades de la Derecha!",
     "MSG-E04": "Violación de Poder!",
     "MSG-E05": "Violación de Unidad!",
 

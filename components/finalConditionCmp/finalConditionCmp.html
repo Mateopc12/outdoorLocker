@@ -1,13 +1,11 @@
 <div class="col-md-12 row">
-    <div class="col-md-10 col-sm-10 col-10 final-condition-div" ng-if="finalConditionCtrl.isFailureRule();">
-        <label class="col-md-12 col-sm-12 col-12 title">{{'successLbl' | translate}}</label>
-        <label class="col-md-12 col-sm-12 col-12">{{'successMessageLbl' | translate}}</label>
+    <div class="col-md-11 col-sm-11 col-11 final-condition-div my-auto" ng-if="finalConditionCtrl.isFailureRule();">
+        <label class="col-md-12 col-sm-12 col-12 content">{{'successMessageLbl' | translate}}</label>
     </div>
-    <div class="col-md-10 col-sm-10 col-10 final-condition-div" ng-if="!finalConditionCtrl.isFailureRule();">
-        <label class="col-md-12 col-sm-12 col-12 title">{{'failedLbl' | translate}}</label>
-        <label class="col-md-12 col-sm-12 col-12">{{'failedMessageLbl' | translate}}</label>
+    <div class="col-md-11 col-sm-11 col-11 final-condition-div my-auto" ng-if="!finalConditionCtrl.isFailureRule();">
+        <label class="col-md-12 col-sm-12 col-12 content">{{'failedMessageLbl' | translate}}</label>
     </div>
-    <div class="col-md-2 col-sm-2 col-2 final-condition-div text-center">
+    <div class="col-md-1 col-sm-1 col-1 final-condition-div my-auto">
         <i ng-if="finalConditionCtrl.isFailureRule();" class="fa fa-check-circle-o check-icon" aria-hidden="true"></i>
         <i ng-if="!finalConditionCtrl.isFailureRule();" class="fa fa-times-circle check-icon" aria-hidden="true"></i>
     </div>

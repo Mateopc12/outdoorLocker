@@ -270,16 +270,15 @@
   margin: 0;
 }
 
-.final-condition-div .title {
+.final-condition-div .content {
   font-weight: bold;
   font-size: 18px;
-  padding: 0;
+  padding: 0px;
   margin: 0;
 }
 
 .final-condition-div .check-icon {
-  font-size: 2.3em;
-  padding-top: 10%;
+  font-size: 2em;
 }
 
 .instructions {
