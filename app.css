@@ -322,6 +322,24 @@
 }
 
 @media(max-width:767px) {
+  .square .border-strong-bottom, .square .border-strong-bottom-gray {
+    height: 70px;
+    font-size: 25px;
+  }
+
+  .square .bg-lightgray {
+    height: 40px;
+  }
+
+  .btn-calc {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .satellite-lbl .name, .total-container .name, .main-cabinet-lbl .name, .main-cabinet-lbl-selected .name {
+    font-size: 35px;
+  }
+  
   .main-cabinet .btn {
     padding-top: 5%;
     padding-bottom: 5%;

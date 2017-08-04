@@ -14,11 +14,11 @@
     </div>
     <div class="conditions-rules row">
         <div ng-repeat="condition in conditionsCtrl.rulesStatus" class="col-lg-12 col-md-4 col-sm-6 col-6 row condition">
-            <div class="col-md-6 col-sm-8 col-8 padding-0">
-                <label ng-if="condition.status">{{condition.errorCode | translate}}</label>
-                <label ng-if="!condition.status">{{condition.successCode | translate}}</label>
+            <div class="col-md-6 col-sm-8 col-8 padding-0 my-auto">
+                <label class="margin-0" ng-if="condition.status">{{condition.errorCode | translate}}</label>
+                <label class="margin-0" ng-if="!condition.status">{{condition.successCode | translate}}</label>
             </div>
-            <div class="col-md-6 col-sm-4 col-4 text-center padding-0">
+            <div class="col-md-6 col-sm-4 col-4 text-center padding-0 my-auto">
                 <i ng-if="!condition.status" class="fa fa-check-circle-o check-icon" aria-hidden="true"></i>
                 <i ng-if="condition.status" class="fa fa-times-circle check-icon" aria-hidden="true"></i>
             </div>
