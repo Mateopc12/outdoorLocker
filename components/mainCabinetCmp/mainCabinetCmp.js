@@ -4,7 +4,7 @@ angular.module('outdoorLockerMdl')
         finalCabinetSelected: '='
     },
     controllerAs: "mainCabinetCtrl",
-    controller: ['$translate', "JSON_RULES", function($translate, JSON_RULES) {
+    controller: ["JSON_RULES", function(JSON_RULES) {
         this.$onInit = () => {
             this.mainCabinettes = JSON_RULES.mainCabinetType;
             this.cabinetSelected = undefined;

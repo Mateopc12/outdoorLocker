@@ -33,6 +33,10 @@
   border: 6px solid gray;
 }
 
+.border-strong-gray.total-cabinets-container {
+  border-bottom: none;
+}
+
 .border-strong-left-gray {
   border-left: 6px solid gray;
 }
@@ -81,7 +85,7 @@
   height: 100%;
 }
 
-.square .border-strong-bottom, .square .border-strong-bottom-gray {
+.square .border-strong-bottom, .square .border-strong-bottom-gray, .square .total-cabinets {
   height: 80px;
   font-size: 25px;
   font-weight: bold;
@@ -99,6 +103,10 @@
 
 .satellite-lbl .label, .total-container .label, .main-cabinete-lbl .label, .main-cabinete-lbl-selected .label {
   margin-top: -10px;
+}
+
+.total-container .label.cabinets-lbl {
+  margin: 0px;
 }
 
 .satellite-lbl, .total-container, .main-cabinet-lbl, .main-cabinet-lbl-selected, .title {
@@ -313,6 +321,10 @@
   padding-top: 50px;
 }
 
+.imgInstructions {
+  height: 45px;
+}
+
 .imgOutdoor {
   margin: 5px 0px 10px 0px; 
 }
@@ -321,8 +333,12 @@
   height: 70px;
 }
 
+.title .form-control-label {
+  font-size: 20px;
+}
+
 @media(max-width:767px) {
-  .square .border-strong-bottom, .square .border-strong-bottom-gray {
+  .square .border-strong-bottom, .square .border-strong-bottom-gray, .square .total-cabinets {
     height: 70px;
     font-size: 25px;
   }

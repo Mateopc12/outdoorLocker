@@ -11,11 +11,18 @@
             <satellite-counter name="satellite.satelliteName" on-button-right="outdoorLockerCtrl.buttonRight($event)" on-button-left="outdoorLockerCtrl.buttonLeft($event)"
                 cuantity-per-unit="satellite.cuantityPerUnit" is-reset="outdoorLockerCtrl.isReset">
         </div>
-        <div class="padding-5 text-center title">
-            {{'totalLbl' | translate}}
+        <div class="row padding-0">
+            <div class="col-md-4 col-sm-4 col-4 padding-0"></div>
+            <div class="col-md-4 col-sm-4 col-4 ">
+                <div class="padding-5 text-center title">
+                    {{'totalLbl' | translate}}
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 padding-0 square"></div>
         </div>
         <div class="padding-5">
-            <total-counter total-left="outdoorLockerCtrl.totalLeft" total-right="outdoorLockerCtrl.totalRight" />
+            <total-counter total-left="outdoorLockerCtrl.totalLeft" total-right="outdoorLockerCtrl.totalRight" 
+            total-left-satellite="outdoorLockerCtrl.totalLeftSatellite" total-right-satellite="outdoorLockerCtrl.totalRightSatellite"/>
         </div>
     </div>
     <div class="col-lg-4 hidden-md-down">

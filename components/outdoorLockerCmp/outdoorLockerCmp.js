@@ -6,16 +6,14 @@ angular.module('outdoorLockerMdl')
         finalCabinetSelected: '<'
     },
     controllerAs: "outdoorLockerCtrl",
-    controller: ['$translate', 'JSON_RULES', '$scope', '$timeout', function($translate, JSON_RULES, $scope, $timeout) {
-        this.changeLanguage = function(key) {
-          $translate.use(key);
-        }
-
+    controller: ['JSON_RULES', '$scope', function(JSON_RULES, $scope) {
         this.$onInit = () => {
             this.jsonRules = JSON_RULES;
             this.totalRight = 0;
             this.totalLeft = 0;
             this.totalUnits = 0;
+            this.totalLeftSatellite = 0;
+            this.totalRightSatellite = 0;
             this.rulesStatus = [{
                 errorCode: "MSG-E01",
                 status: false,
@@ -42,6 +40,8 @@ angular.module('outdoorLockerMdl')
             $scope.$on("resetValues", () => {
                 this.totalRight = 0;
                 this.totalLeft = 0;
+                this.totalLeftSatellite = 0;
+                this.totalRightSatellite = 0;
                 this.totalUnits = 0;
                 this.rulesStatus.map(rule => rule.status = false);
             });
@@ -57,16 +57,21 @@ angular.module('outdoorLockerMdl')
 
         this.buttonRight = (event) => {
             this.totalRight = (event.isAdding) ? this.totalRight + event.cuantityPerUnit : ((event.cuantity > 0) ? this.totalRight - event.cuantityPerUnit: this.totalRight);
-            this.onTotalUnitsChange(event);
+            this.onTotalUnitsChange(event, true);
         }
 
         this.buttonLeft = (event) => {
             this.totalLeft = (event.isAdding) ? this.totalLeft + event.cuantityPerUnit : ((event.cuantity > 0) ? this.totalLeft - event.cuantityPerUnit: this.totalLeft);
-            this.onTotalUnitsChange(event);
+            this.onTotalUnitsChange(event, false);
         }
 
-        this.onTotalUnitsChange = (event) => {
+        this.onTotalUnitsChange = (event, isRightButton) => {
             this.totalUnits = (event.isAdding) ? this.totalUnits + 1 : ((event.cuantity > 0) ? this.totalUnits - 1 : this.totalUnits);
+            if (isRightButton) {
+                this.totalRightSatellite = (event.isAdding) ? this.totalRightSatellite + 1 : ((event.cuantity > 0) ? this.totalRightSatellite - 1 : this.totalRightSatellite);                
+            } else {
+                this.totalLeftSatellite = (event.isAdding) ? this.totalLeftSatellite + 1 : ((event.cuantity > 0) ? this.totalLeftSatellite - 1 : this.totalLeftSatellite);
+            }
             this.rulesStatus[3].status = (8 < this.totalUnits + 1);
             this.rulesStatus[4].status = (4 < this.totalUnits + 1);
         }

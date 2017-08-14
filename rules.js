@@ -41,16 +41,15 @@ var JSON_RULES_OBJECT =
         {
           "nameCode":"RLE-NME01",
           "descriptionCode":"RLE-DES01",
-          "notesName":"RLE-NTE01",
           "notes": [
             {
-              "descriptionNoteCode":"NTE-DES01"
+              "descriptionNoteCode":"7-Door Main Cabinet"
             },
             {
-              "descriptionNoteCode":"NTE-DES02"
+              "descriptionNoteCode":"11-Door Main Cabinet"
             },
             {
-              "descriptionNoteCode":"NTE-DES03"
+              "descriptionNoteCode":"16-Door Main Cabinet"
             }
           ]
         },
@@ -60,19 +59,7 @@ var JSON_RULES_OBJECT =
         },
         {
           "nameCode":"RLE-NME03",
-          "descriptionCode":"RLE-DES03",
-          "notesName":"RLE-NTE02",
-          "notes": [
-            {
-              "descriptionNoteCode":"NTE-DES04"
-            },
-            {
-              "descriptionNoteCode":"NTE-DES05"
-            },
-            {
-              "descriptionNoteCode":"NTE-DES06"
-            }
-          ]
+          "descriptionCode":"RLE-DES03"
         },
         {
           "nameCode":"RLE-NME04",
@@ -81,10 +68,6 @@ var JSON_RULES_OBJECT =
         {
           "nameCode":"RLE-NME05",
           "descriptionCode":"RLE-DES05"
-        },
-        {
-          "nameCode":"RLE-NME06",
-          "descriptionCode":"RLE-DES06"
         },
       ]
   };

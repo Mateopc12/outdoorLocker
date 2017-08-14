@@ -2,10 +2,11 @@
 
 // Declare app level module which depends on views, and components
 angular.module('outdoorLockerMdl', [
-  'pascalprecht.translate' 
+  'ngSanitize',
+  'pascalprecht.translate'
 ])
 .constant("JSON_RULES", JSON_RULES_OBJECT)
-.constant("TRANSLATE_CODES", ['en-US', 'es'])
+.constant("TRANSLATE_CODES", ['en-US'])
 .config(['$translateProvider', 
 function($translateProvider, JSON_TRANSLATIONS_EN, JSON_TRANSLATIONS_ES) {
 

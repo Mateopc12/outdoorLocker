@@ -10,6 +10,7 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     "successMessageLbl": "The Configuration is Successful!",
     "failedMessageLbl": "The Configuration is Unsuccessful!",
     "instructionLbl": "Instructions",
+    "cabinetsLbl": "Cabinets",
 
     /*Error messages*/
     "MSG-E01": "Main Violation!",
@@ -26,32 +27,27 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     "MSG-S05": "Units OK",
 
     /*Rules names*/
-    "RLE-NME01": "Main Rule",
-    "RLE-NME02": "Left Units",
-    "RLE-NME03": "Right Units",
-    "RLE-NME04": "Power",
-    "RLE-NME05": "Units",
-    "RLE-NME06": "Successful configuration",
+    "RLE-NME01": "Main Cabinet",
+    "RLE-NME02": "Satellites",
+    "RLE-NME03": "Right Satellite Units",
+    "RLE-NME04": "Left Satellite Units",
+    "RLE-NME05": "Violations",
 
     /*Rules Description*/
-    "RLE-DES01": "System should accept parameters when ∑ Main Cabinet = 1.",
-    "RLE-DES02": "System should accept parameters when ∑ (left Satellite cabinet units) x (Satellite factor) <= ∑ left units from Main.",
-    "RLE-DES03": "System should accept parameters when ∑ (right Satellite cabinet units) x (Satellite factor) <= ∑ right units from Main.",
-    "RLE-DES04": "System should accept parameters when ∑ left Satellite units + ∑ Main Cabinet + ∑ right Satellite units <= 8.",
-    "RLE-DES05": "System should accept parameters when ∑ Main + ∑ left Satellite units + ∑ right Satellite units <= 4.",
-    "RLE-DES06": "All the above rules must comply with the written parameters.",
-
-    /*Notes names*/
-    "RLE-NTE01": "Note for units",
-    "RLE-NTE02": "Note for Satellite factor",
-
-    /*Notes desciprtion*/
-    "NTE-DES01": "7-door Main Cabinet: 4 (Left units) 6 (Right units)",
-    "NTE-DES02": "11-door Main Cabinet: 3 (Left units) 6 (Right units)",
-    "NTE-DES03": "16-door Main Cabinet: 2 (Left units) 6 (Right units)",
-    "NTE-DES04": "4-door Satellite Cabinet: # units for the left and/or the right side multiplied by 1.",
-    "NTE-DES05": "8-door Satellite Cabinet: # units for the left and/or the right side multiplied by 2.",
-    "NTE-DES06": "12-door Satellite Cabinet: # units for the left and/or the right side multiplied by 3."
-
-
+    "RLE-DES01": "Select one of the Main Control Cabinets.",
+    "RLE-DES02": "The total number of Satellites that can be added to a Main Cabinet is 3. <br> <br> Make Satellite selections as described below.",
+    "RLE-DES03": `Select the Satellites to be placed on the right side of the Main Cabinet. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    A successful configuration will be indicated as shown below.<br>
+    <img class="imgInstructions" src="rsc/successfull.png">`,
+    "RLE-DES04": `Select the Satellites to be placed on the left side of the Main Cabinet. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    A successful configuration will be indicated as shown below.<br>
+    <img class="imgInstructions" src="rsc/successfull.png">`,
+    "RLE-DES05": `If the selections violate any of the five verifications, this will message will appear <br> <br>
+    <img class="imgInstructions" src="rsc/unsuccessfull.png"><br> <br>
+    When the above message appears, you must change the selections until the successful message appears <br> <br>
+    <img class="imgInstructions" src="rsc/successfull.png">`    
 }

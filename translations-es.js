@@ -9,6 +9,7 @@ var JSON_TRANSLATIONS_ES_OBJECT =
     "successMessageLbl": "La Configuración es Exitosa!",
     "failedMessageLbl": "La Configuración ha Fallado!",
     "instructionLbl": "Instrucciones",
+    "cabinetsLbl": "Cabinetes",
 
     /*Error messages*/
     "MSG-E01": "Violación Principal!",
@@ -25,32 +26,28 @@ var JSON_TRANSLATIONS_ES_OBJECT =
     "MSG-S05": "Unidades OK",
 
     /*Rules names*/
-    "RLE-NME01": "Regla Principal",
-    "RLE-NME02": "Unidades de la Izquierda",
-    "RLE-NME03": "Unidades de la Derecha",
-    "RLE-NME04": "Poder",
-    "RLE-NME05": "Unidades",
-    "RLE-NME06": "Configuración Exitosa",
+    "RLE-NME01": "Main Cabinet",
+    "RLE-NME02": "Satellites",
+    "RLE-NME03": "Right Satellite Units",
+    "RLE-NME04": "Left Satellite Units",
+    "RLE-NME05": "Violations",
 
     /*Rules Description*/
-    "RLE-DES01": "El sistema debe aceptar parámetros cuando ∑ Main Cabinet = 1.",
-    "RLE-DES02": "El sistema debe aceptar parámetros cuando ∑ (unidades de la Izquierda del Satellite Cabinet) x (factor Satellite) <= ∑ unidades de la Izquierda del Main Cabinet.",
-    "RLE-DES03": "El sistema debe aceptar parámetros cuando ∑ (unidades de la Derecha del Satellite Cabinet) x (factor Satellite) <= ∑ unidades de la Derecha del Main Cabinet.",
-    "RLE-DES04": "El sistema debe aceptar parámetros cuando ∑ unidades de la Izquierda del Satellite + ∑ Main Cabinet + ∑ unidades de Derecha del Satellite <= 8.",
-    "RLE-DES05": "El sistema debe aceptar parámetros cuando ∑ unidades de la Izquierda del Satellite + ∑ Main Cabinet + ∑ unidades de Derecha del Satellite <= 4.",
-    "RLE-DES06": "Todas las reglas anteriores deben cumplir con los parámetros escritos.",
-
-    /*Notes names*/
-    "RLE-NTE01": "Notas para las unidades",
-    "RLE-NTE02": "Notas para el factor Satellite",
-
-    /*Notes desciprtion*/
-    "NTE-DES01": "7-door Main Cabinet: 4 (unidades de la Izquierda) 6 (unidades de la Derecha)",
-    "NTE-DES02": "11-door Main Cabinet: 3 (unidades de la Izquierda) 6 (unidades de la Derecha)",
-    "NTE-DES03": "16-door Main Cabinet: 2 (unidades de la Izquierda) 6 (unidades de la Derecha)",
-    "NTE-DES04": "4-door Satellite Cabinet: # de unidades de la Izquierda y/o Derecha son multiplicados por 1.",
-    "NTE-DES05": "8-door Satellite Cabinet: # de unidades de la Izquierda y/o Derecha son multiplicados por 2.",
-    "NTE-DES06": "12-door Satellite Cabinet: # de unidades de la Izquierda y/o Derecha son multiplicados por 3."
-
+    "RLE-DES01": "Seleccione uno de los Select one of the Main Control Cabinets.",
+    "RLE-DES02": "The total number of Satellites that can be added to a Main Cabinet is 3. <br> <br> Make Satellite selections as described below.",
+    "RLE-DES03": `Select the Satellites to be placed on the right side of the Main Cabinet. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    A successful configuration will be indicated as shown below.<br>
+    <img class="imgInstructions" src="rsc/successfull.png">`,
+    "RLE-DES04": `Select the Satellites to be placed on the left side of the Main Cabinet. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    A successful configuration will be indicated as shown below.<br>
+    <img class="imgInstructions" src="rsc/successfull.png">`,
+    "RLE-DES05": `If the selections violate any of the five verifications, this will message will appear <br> <br>
+    <img class="imgInstructions" src="rsc/unsuccessfull.png"><br> <br>
+    When the above message appears, you must change the selections until the successful message appears <br> <br>
+    <img class="imgInstructions" src="rsc/successfull.png">`    
 
 }

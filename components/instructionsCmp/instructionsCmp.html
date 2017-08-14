@@ -5,11 +5,12 @@
     <div ng-repeat="rule in instructionsCtrl.rules" class="padding-5 content">
         <label>{{$index + 1}})</label>
         <label>{{rule.nameCode | translate}}: </label>
-        <p class="margin-0">{{rule.descriptionCode | translate}}</p>
-        <div ng-if="rule.notesName" class="margin-5">
-            <label class="margin-0">{{rule.notesName | translate}}</label>
+        <p class="margin-0" data-ng-bind-html="rule.finalDescription"></p>
+        <div ng-if="rule.notes" class="margin-5">
             <ul class="margin-0">
-                <li class="margin-0 margin-left-10" ng-repeat="note in rule.notes">{{note.descriptionNoteCode | translate}}</li>
+                <li class="margin-0 margin-left-10" ng-repeat="note in rule.notes">
+                    {{note.descriptionNoteCode}}
+                </li>
             </ul>
         </div>
     </div>
