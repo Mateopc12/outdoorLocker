@@ -23,8 +23,8 @@
                 <div class="cell-centered" ng-class="{'main-cabinet-choose-btn-disabled': !mainCabinetCtrl.cabinetSelected}">{{'chooseCabinetLbl' | translate}}</div>
             </div>
         </div>
-        <div class="text-center">
-            <label class="red-text">After selecting a Main Cabinet click on “Choose Main Cabinet” to advance to the next page</label>
+        <div ng-if="this.cabinetSelected" class="text-center">
+            <label class="red-text">Please click on "Choose Main Cabinet" to advance to the next page</label>
         </div>
     </div>
 </div>
