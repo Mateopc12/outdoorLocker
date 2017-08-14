@@ -47,7 +47,7 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     A successful configuration will be indicated as shown below.<br>
     <img class="imgInstructions" src="rsc/successfull.png">`,
     "RLE-DES05": `If the selections violate any of the five verifications, this will message will appear <br> <br>
-    <img class="imgInstructions" src="rsc/unsuccessfull.png"><br> <br>
+    <img class="imgInstructions" src="rsc/unsuccess.png"><br> <br>
     When the above message appears, you must change the selections until the successful message appears <br> <br>
-    <img class="imgInstructions" src="rsc/successfull.png">`    
+    <img class="imgInstructions" src="rsc/success.png">`    
 }
