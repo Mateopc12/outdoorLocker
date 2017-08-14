@@ -11,7 +11,7 @@ angular.module('outdoorLockerMdl')
         }
 
         this.selectCurrentCabinet = (mainCabinet) => {
-            if (this.cabinetSelected === mainCabinet) ? undefined : mainCabinet;
+            this.cabinetSelected = (this.cabinetSelected === mainCabinet) ? undefined : mainCabinet;
         }
 
         this.sendCurrentCabinet = () => {
