@@ -29,8 +29,8 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     /*Rules names*/
     "RLE-NME01": "Main Cabinet",
     "RLE-NME02": "Satellites",
-    "RLE-NME03": "Right Satellite Units",
-    "RLE-NME04": "Left Satellite Units",
+    "RLE-NME03": "Right Satellite",
+    "RLE-NME04": "Left Satellite",
     "RLE-NME05": "Violations",
 
     /*Rules Description*/
