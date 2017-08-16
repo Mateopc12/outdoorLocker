@@ -262,7 +262,12 @@ color: red;
 
 .conditions-rules .check-icon {
   font-size: 1.7em;
-  color: #424545;
+  color: #02a936;
+}
+
+.conditions-rules .uncheck-icon {
+  font-size: 1.7em;
+  color: #a90202;
 }
 
 .final-condition-rules {

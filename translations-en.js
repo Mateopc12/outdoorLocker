@@ -37,13 +37,13 @@ var JSON_TRANSLATIONS_EN_OBJECT =
     "RLE-DES01": "Select one of the Main Control Cabinets.",
     "RLE-DES02": "The total number of Satellites that can be added to a Main Cabinet is 3. <br> <br> Make Satellite selections as described below.",
     "RLE-DES03": `Select the Satellites to be placed on the right side of the Main Cabinet. <br> <br>
-    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
-    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle uncheck-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle uncheck-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
     A successful configuration will be indicated as shown below.<br>
     <img class="imgInstructions" src="rsc/success.png">`,
     "RLE-DES04": `Select the Satellites to be placed on the left side of the Main Cabinet. <br> <br>
-    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
-    When this symbol <i class="fa fa-times-circle check-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
+    If the number of Satellites selected is an unacceptable configuration, a symbol <i class="fa fa-times-circle uncheck-icon" aria-hidden="true"></i> will appear in one of the five verification areas. <br> <br>
+    When this symbol <i class="fa fa-times-circle uncheck-icon" aria-hidden="true"></i> appears, you must change the selections. <br> <br>
     A successful configuration will be indicated as shown below.<br>
     <img class="imgInstructions" src="rsc/success.png">`,
     "RLE-DES05": `If the selections violate any of the five verifications, this will message will appear <br> <br>
